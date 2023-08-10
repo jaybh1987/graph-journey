@@ -1,4 +1,4 @@
-package domain.library.basicAlogs
+package domain.library.basicAlogs.stack
 
 import scala.collection.mutable._
 
