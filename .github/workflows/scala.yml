@@ -16,9 +16,7 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
@@ -29,6 +27,8 @@ jobs:
         cache: 'sbt'
     - name: Run tests
       run: sbt test
+    - name: SayHi
+      run: echo "Hi everyone"
       # Optional: This step uploads information to the GitHub dependency graph and unblocking Dependabot alerts for the repository
 
 
