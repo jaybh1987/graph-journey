@@ -23,7 +23,24 @@ class Queue(size: Int) {
     } else {
       front += 1
       que = que.drop(1)
+      back -= 1
       println(s"Element removed from the Queue")
+    }
+  }
+
+  def head():Unit = {
+    if(que.isEmpty){
+      println(s"Queue is Empty")
+    } else {
+      println(s"Head of queue is ${que(0)}")
+    }
+  }
+
+  def tail():Unit = {
+    if(que.isEmpty){
+      println(s"Queue is Empty")
+    } else{
+      println(s"Tail of queue is ${que(back)}")
     }
   }
 
