@@ -32,7 +32,7 @@ class Queue(size: Int) {
     if(que.isEmpty){
       println(s"Queue is Empty")
     } else {
-      println(s"Head of queue is ${que(0)}")
+      println(s"Head of queue is ${que.head}")
     }
   }
 
