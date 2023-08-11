@@ -44,6 +44,10 @@ class Queue(size: Int) {
     }
   }
 
+  def isEmpty():Boolean = que.isEmpty
+
+  def isFull():Boolean = if(back == size-1) true else false
+
   def print():Unit = {
     println(s"Elements in the Queue are $que")
   }
