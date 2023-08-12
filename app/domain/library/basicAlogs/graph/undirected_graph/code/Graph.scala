@@ -1,6 +1,5 @@
-package domain.library.basicAlogs.undirected_graph.image
+package domain.library.basicAlogs.graph.undirected_graph.code
 
-import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 
