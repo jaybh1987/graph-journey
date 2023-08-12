@@ -37,10 +37,3 @@ case class Graph(graphType: String = "Undirected") {
     println(s"Node ${node.nodeName} is removed with adjacents ${node.adjacencyList}")
   }
 }
-
-val g = Graph()
-g.addNode(Node("a", List("b","c","d")))
-g.addNode(Node("b", List("c", "d")))
-//object Graph {
-//
-//}
