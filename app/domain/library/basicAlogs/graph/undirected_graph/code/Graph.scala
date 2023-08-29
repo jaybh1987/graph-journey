@@ -13,13 +13,9 @@ case class Node(nodeName: String, adjacencyList: List[String])
 case class Graph(graphType: String = "Undirected") {
 
   var nodeList: ArrayBuffer[Node] = ArrayBuffer.empty
-  def addNode(n: Node): Unit = {
-    nodeList.addOne(n)
-  }
+  def addNode(n: Node): Unit = nodeList.addOne(n)
 
-  def listNodes: Unit = for{
-    i <- nodeList.indices
-  } yield {
+  def listNodes: Unit = for{ i <- nodeList.indices } yield {
     if(nodeList.isEmpty)
       println(nodeList(i))
     else
@@ -36,3 +32,19 @@ case class Graph(graphType: String = "Undirected") {
     println(s"Node ${node.nodeName} is removed with adjacents ${node.adjacencyList}")
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
